@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D1F9F8"
+   >
+
+
+    <!-- cabecera -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="&lt;&lt;"
+            android:id="@+id/button"
+            android:onClick="atras"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="FECHA"
+            android:id="@+id/textViewFecha"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text=">>"
+            android:id="@+id/button2"
+            android:onClick="siguiente"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <!-- layout de Desayuno -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            >
+
+          <!--  <ImageButton
+                android:id="@+id/botonDesayuno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:onClick="clickDesayuno"
+                android:src="@drawable/imgdesayuno" />
+
+            <ImageButton
+                android:id="@+id/botonRegrigerio1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:onClick="clickRefrigerio1"
+                android:src="@drawable/imgrefrigerio1" />-->
+
+            <Button
+                android:id="@+id/botonDesayuno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:onClick="clickDesayuno"
+                android:background="#08a5ed"
+                android:layout_margin="5dp"
+                android:text="DESAYUNO"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/botonRegrigerio1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:onClick="clickRefrigerio1"
+                android:background="#08a5ed"
+                android:layout_margin="5dp"
+                android:text="REFRIGERIO 1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Hora de Desayuno -->
+       <!-- <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvhHoraDesayuno"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvHoraRefrigerio1"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:gravity="center_horizontal" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+    <!-- layout de Comida -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            >
+
+           <!-- <ImageButton
+                android:id="@+id/botonComida"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="clickComida"
+                android:layout_weight="1"
+                android:src="@drawable/imgcomida" />
+
+            <ImageButton
+                android:id="@+id/botonRegrigerio2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="clickRefrigerio2"
+                android:layout_weight="1"
+                android:src="@drawable/imgrefrigerio2" />-->
+
+            <Button
+                android:id="@+id/botonComida"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="clickComida"
+                android:layout_weight="1"
+                android:background="#08a5ed"
+                android:layout_margin="5dp"
+                android:text="COMIDA"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/botonRegrigerio2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:onClick="clickRefrigerio2"
+                android:layout_weight="1"
+                android:background="#08a5ed"
+                android:layout_margin="5dp"
+                android:text="REFRIGERIO 2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!--&lt;!&ndash; Hora de Comida &ndash;&gt;
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvhHoraComida"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvHoraRefrigerio2"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+
+    <!-- layout de Cena -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            >
+
+           <!-- <ImageButton
+                android:id="@+id/botonCena"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:onClick="clickCena"
+                android:src="@drawable/imgcena" />
+
+            <ImageButton
+                android:id="@+id/botonRegrigerio3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:onClick="clickRefrigerio3"
+                android:layout_weight="1"
+                android:src="@drawable/imgrefrigerio3" />-->
+
+            <Button
+                android:id="@+id/botonCena"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:onClick="clickCena"
+                android:text="CENA"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="#08a5ed"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/botonRegrigerio3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:onClick="clickRefrigerio3"
+                android:layout_weight="1"
+                android:text="REFRIGERIO 3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="0dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="5dp"
+                android:background="#08a5ed" />
+        </LinearLayout>
+
+        <!-- Hora de Cena -->
+        <!--<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvhHoraCena"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="00:00 AM"
+                android:id="@+id/tvHoraRefrigerio3"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_gravity="top" />
+        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+
+    <!-- Pie de Página -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Álbum de Comidas"
+        android:id="@+id/textViewFooter"
+
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

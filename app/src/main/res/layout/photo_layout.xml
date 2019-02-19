@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D1F9F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DESAYUNO"
+        android:id="@+id/textViewMeal"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Agregar Foto"
+            android:id="@+id/btnAgregarOtraFoto"
+            android:onClick="nuevaFoto"
+            android:layout_weight="1.5"
+            android:background="#08a5ed"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Eliminar"
+            android:id="@+id/btnEliminar"
+            android:onClick="eliminar"
+            android:layout_weight="1"
+            android:background="#08a5ed"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/imageView2"
+        android:layout_weight="7"
+        android:scaleType="fitXY"
+        android:src="@drawable/meal"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00:00"
+        android:id="@+id/labelHora"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="2"
+        android:hint="Describe tus alimentos"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Cancelar"
+            android:onClick="cancelar"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:background="#08a5ed"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Guardar"
+            android:onClick="saveFile"
+            android:id="@+id/botonAceptar"
+            android:layout_weight="1"
+            android:background="#08a5ed"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+</LinearLayout>
